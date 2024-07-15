@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Page Flip Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="images/page_1_cropped.png" class="book-page">
+        </div>
+        <div class="slide">
+            <img src="images/page_2_cropped.png" class="book-page">
+        </div>
+        <div class="slide">
+            <img src="images/page_3_cropped.png" class="book-page">
+        </div>
+        <div class="slide">
+            <img src="images/page_4_cropped.png" class="book-page">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
